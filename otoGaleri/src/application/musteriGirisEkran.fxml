@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor_tum" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: #cd2147;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.musteriGirisEkrani_SampleController">
+   <children>
+      <AnchorPane fx:id="anchor_yan" prefHeight="500.0" prefWidth="200.0" style="-fx-background-color: bdbebd;">
+         <children>
+            <ImageView fx:id="image2" fitHeight="150.0" fitWidth="200.0" layoutX="25.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@kullanici.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <AnchorPane fx:id="anchor_sag" layoutX="200.0" prefHeight="500.0" prefWidth="300.0">
+         <children>
+            <Label layoutX="14.0" layoutY="331.0" text="Üye Değil Misiniz?">
+               <font>
+                  <Font name="Lato Regular" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txt_kullaniciAdi" alignment="CENTER" layoutX="105.0" layoutY="146.0" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: bdbebd;">
+               <font>
+                  <Font name="Lato Regular" size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="11.0" layoutY="148.0" text="Kullanıcı Adı:">
+               <font>
+                  <Font name="Lato Regular" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="53.0" layoutY="203.0" prefHeight="18.0" prefWidth="42.0" text="Şifre:">
+               <font>
+                  <Font name="Lato Regular" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_uyeOl" alignment="TOP_RIGHT" layoutX="145.0" layoutY="325.0" mnemonicParsing="false" onAction="#btn_uyeOl_click" prefHeight="26.0" prefWidth="73.0" style="-fx-background-color: bdbebd;" text="Üye Ol">
+               <font>
+                  <Font name="Lato Regular" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="image" fitHeight="18.0" fitWidth="18.0" layoutX="146.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@uyeOl.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="118.0" layoutY="106.0" text="Bilgilerinizi Giriniz.">
+               <font>
+                  <Font name="Lato Regular" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_yanGetir" layoutX="28.0" layoutY="14.0" mnemonicParsing="false" onAction="#btn_yanGetir_Click" style="-fx-background-color: bdbebd;" text="&lt; &gt;">
+               <font>
+                  <Font name="Lato Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_girisYap" alignment="TOP_RIGHT" layoutX="140.0" layoutY="250.0" mnemonicParsing="false" onAction="#btn_girisYap_click" prefHeight="30.0" prefWidth="81.0" style="-fx-background-color: bdbebd;" text="Giriş Yap">
+               <font>
+                  <Font name="Lato Regular" size="14.0" />
+               </font>
+            </Button>
+            <PasswordField fx:id="txt_password" layoutX="105.0" layoutY="198.0" prefHeight="28.0" prefWidth="150.0" style="-fx-background-color: bdbebd;">
+               <font>
+                  <Font name="Lato Regular" size="14.0" />
+               </font>
+            </PasswordField>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
